@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Acceder a la lista de productos";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    <div>Seleccione un producto: </div>
+
+    @Html.ActionLink("Listado", "Index", "Products")<br />
+
+
+}
